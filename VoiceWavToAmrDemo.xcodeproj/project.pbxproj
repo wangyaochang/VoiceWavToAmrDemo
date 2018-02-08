@@ -1,0 +1,689 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03FEB907202C210200E50E85 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FEB906202C210200E50E85 /* AppDelegate.m */; };
+		03FEB90A202C210200E50E85 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FEB909202C210200E50E85 /* ViewController.m */; };
+		03FEB90D202C210200E50E85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03FEB90B202C210200E50E85 /* Main.storyboard */; };
+		03FEB90F202C210200E50E85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03FEB90E202C210200E50E85 /* Assets.xcassets */; };
+		03FEB912202C210200E50E85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03FEB910202C210200E50E85 /* LaunchScreen.storyboard */; };
+		03FEB915202C210200E50E85 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FEB914202C210200E50E85 /* main.m */; };
+		03FEB91F202C210200E50E85 /* VoiceWavToAmrDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FEB91E202C210200E50E85 /* VoiceWavToAmrDemoTests.m */; };
+		03FEB92A202C210200E50E85 /* VoiceWavToAmrDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FEB929202C210200E50E85 /* VoiceWavToAmrDemoUITests.m */; };
+		03FEB94D202C226D00E50E85 /* AudioView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03FEB94B202C226D00E50E85 /* AudioView.xib */; };
+		03FEB94E202C226D00E50E85 /* AudioView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FEB94C202C226D00E50E85 /* AudioView.m */; };
+		03FEB952202C229000E50E85 /* AmrFileCodec.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FEB951202C229000E50E85 /* AmrFileCodec.m */; };
+		03FEB955202C229600E50E85 /* AudioFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FEB954202C229600E50E85 /* AudioFormat.m */; };
+		03FEB95B202C232C00E50E85 /* libopencore-amrwb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03FEB959202C232B00E50E85 /* libopencore-amrwb.a */; };
+		03FEB95C202C232C00E50E85 /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03FEB95A202C232C00E50E85 /* libopencore-amrnb.a */; };
+		03FEB972202C235E00E50E85 /* libspeexdsp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03FEB968202C235D00E50E85 /* libspeexdsp.a */; };
+		03FEB973202C235E00E50E85 /* libspeex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03FEB96E202C235E00E50E85 /* libspeex.a */; };
+		03FEB977202C236800E50E85 /* SpeexCodec.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FEB975202C236800E50E85 /* SpeexCodec.m */; };
+		03FEB97C202C23C700E50E85 /* UIColor+PXColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FEB979202C23C700E50E85 /* UIColor+PXColors.m */; };
+		03FEB97D202C23C700E50E85 /* UIView+Addtions.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FEB97A202C23C700E50E85 /* UIView+Addtions.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03FEB91B202C210200E50E85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03FEB8FA202C210200E50E85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03FEB901202C210200E50E85;
+			remoteInfo = VoiceWavToAmrDemo;
+		};
+		03FEB926202C210200E50E85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03FEB8FA202C210200E50E85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03FEB901202C210200E50E85;
+			remoteInfo = VoiceWavToAmrDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03FEB902202C210200E50E85 /* VoiceWavToAmrDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceWavToAmrDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03FEB905202C210200E50E85 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		03FEB906202C210200E50E85 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		03FEB908202C210200E50E85 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		03FEB909202C210200E50E85 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		03FEB90C202C210200E50E85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		03FEB90E202C210200E50E85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03FEB911202C210200E50E85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		03FEB913202C210200E50E85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03FEB914202C210200E50E85 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		03FEB91A202C210200E50E85 /* VoiceWavToAmrDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoiceWavToAmrDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03FEB91E202C210200E50E85 /* VoiceWavToAmrDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VoiceWavToAmrDemoTests.m; sourceTree = "<group>"; };
+		03FEB920202C210200E50E85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03FEB925202C210200E50E85 /* VoiceWavToAmrDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoiceWavToAmrDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03FEB929202C210200E50E85 /* VoiceWavToAmrDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VoiceWavToAmrDemoUITests.m; sourceTree = "<group>"; };
+		03FEB92B202C210200E50E85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03FEB94A202C226C00E50E85 /* AudioView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioView.h; sourceTree = "<group>"; };
+		03FEB94B202C226D00E50E85 /* AudioView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AudioView.xib; sourceTree = "<group>"; };
+		03FEB94C202C226D00E50E85 /* AudioView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioView.m; sourceTree = "<group>"; };
+		03FEB950202C229000E50E85 /* AmrFileCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmrFileCodec.h; sourceTree = "<group>"; };
+		03FEB951202C229000E50E85 /* AmrFileCodec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmrFileCodec.m; sourceTree = "<group>"; };
+		03FEB953202C229600E50E85 /* AudioFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioFormat.h; sourceTree = "<group>"; };
+		03FEB954202C229600E50E85 /* AudioFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioFormat.m; sourceTree = "<group>"; };
+		03FEB959202C232B00E50E85 /* libopencore-amrwb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrwb.a"; sourceTree = "<group>"; };
+		03FEB95A202C232C00E50E85 /* libopencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libopencore-amrnb.a"; sourceTree = "<group>"; };
+		03FEB961202C234700E50E85 /* dec_if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dec_if.h; sourceTree = "<group>"; };
+		03FEB962202C234700E50E85 /* if_rom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_rom.h; sourceTree = "<group>"; };
+		03FEB964202C235C00E50E85 /* speex_buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_buffer.h; sourceTree = "<group>"; };
+		03FEB965202C235C00E50E85 /* speex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex.h; sourceTree = "<group>"; };
+		03FEB966202C235D00E50E85 /* speex_header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_header.h; sourceTree = "<group>"; };
+		03FEB967202C235D00E50E85 /* speex_config_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_config_types.h; sourceTree = "<group>"; };
+		03FEB968202C235D00E50E85 /* libspeexdsp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libspeexdsp.a; sourceTree = "<group>"; };
+		03FEB969202C235D00E50E85 /* speex_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_types.h; sourceTree = "<group>"; };
+		03FEB96A202C235D00E50E85 /* speex_bits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_bits.h; sourceTree = "<group>"; };
+		03FEB96B202C235D00E50E85 /* speex_echo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_echo.h; sourceTree = "<group>"; };
+		03FEB96C202C235E00E50E85 /* speex_stereo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_stereo.h; sourceTree = "<group>"; };
+		03FEB96D202C235E00E50E85 /* speex_callbacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_callbacks.h; sourceTree = "<group>"; };
+		03FEB96E202C235E00E50E85 /* libspeex.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libspeex.a; sourceTree = "<group>"; };
+		03FEB96F202C235E00E50E85 /* speex_preprocess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_preprocess.h; sourceTree = "<group>"; };
+		03FEB970202C235E00E50E85 /* speex_jitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_jitter.h; sourceTree = "<group>"; };
+		03FEB971202C235E00E50E85 /* speex_resampler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speex_resampler.h; sourceTree = "<group>"; };
+		03FEB974202C236800E50E85 /* SpeexCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeexCodec.h; sourceTree = "<group>"; };
+		03FEB975202C236800E50E85 /* SpeexCodec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeexCodec.m; sourceTree = "<group>"; };
+		03FEB976202C236800E50E85 /* SpeexAllHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeexAllHeader.h; sourceTree = "<group>"; };
+		03FEB978202C23C700E50E85 /* UIView+Addtions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Addtions.h"; sourceTree = "<group>"; };
+		03FEB979202C23C700E50E85 /* UIColor+PXColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PXColors.m"; sourceTree = "<group>"; };
+		03FEB97A202C23C700E50E85 /* UIView+Addtions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Addtions.m"; sourceTree = "<group>"; };
+		03FEB97B202C23C700E50E85 /* UIColor+PXColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+PXColors.h"; sourceTree = "<group>"; };
+		03FEB97E202C251D00E50E85 /* interf_enc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_enc.h; sourceTree = "<group>"; };
+		03FEB97F202C251D00E50E85 /* interf_dec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interf_dec.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03FEB8FF202C210200E50E85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03FEB972202C235E00E50E85 /* libspeexdsp.a in Frameworks */,
+				03FEB973202C235E00E50E85 /* libspeex.a in Frameworks */,
+				03FEB95B202C232C00E50E85 /* libopencore-amrwb.a in Frameworks */,
+				03FEB95C202C232C00E50E85 /* libopencore-amrnb.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03FEB917202C210200E50E85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03FEB922202C210200E50E85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03FEB8F9202C210200E50E85 = {
+			isa = PBXGroup;
+			children = (
+				03FEB904202C210200E50E85 /* VoiceWavToAmrDemo */,
+				03FEB91D202C210200E50E85 /* VoiceWavToAmrDemoTests */,
+				03FEB928202C210200E50E85 /* VoiceWavToAmrDemoUITests */,
+				03FEB903202C210200E50E85 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		03FEB903202C210200E50E85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03FEB902202C210200E50E85 /* VoiceWavToAmrDemo.app */,
+				03FEB91A202C210200E50E85 /* VoiceWavToAmrDemoTests.xctest */,
+				03FEB925202C210200E50E85 /* VoiceWavToAmrDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03FEB904202C210200E50E85 /* VoiceWavToAmrDemo */ = {
+			isa = PBXGroup;
+			children = (
+				03FEB94F202C227D00E50E85 /* AudioModule */,
+				03FEB949202C225D00E50E85 /* AudioView */,
+				03FEB905202C210200E50E85 /* AppDelegate.h */,
+				03FEB906202C210200E50E85 /* AppDelegate.m */,
+				03FEB908202C210200E50E85 /* ViewController.h */,
+				03FEB909202C210200E50E85 /* ViewController.m */,
+				03FEB97B202C23C700E50E85 /* UIColor+PXColors.h */,
+				03FEB979202C23C700E50E85 /* UIColor+PXColors.m */,
+				03FEB978202C23C700E50E85 /* UIView+Addtions.h */,
+				03FEB97A202C23C700E50E85 /* UIView+Addtions.m */,
+				03FEB90B202C210200E50E85 /* Main.storyboard */,
+				03FEB90E202C210200E50E85 /* Assets.xcassets */,
+				03FEB910202C210200E50E85 /* LaunchScreen.storyboard */,
+				03FEB913202C210200E50E85 /* Info.plist */,
+				03FEB914202C210200E50E85 /* main.m */,
+			);
+			path = VoiceWavToAmrDemo;
+			sourceTree = "<group>";
+		};
+		03FEB91D202C210200E50E85 /* VoiceWavToAmrDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				03FEB91E202C210200E50E85 /* VoiceWavToAmrDemoTests.m */,
+				03FEB920202C210200E50E85 /* Info.plist */,
+			);
+			path = VoiceWavToAmrDemoTests;
+			sourceTree = "<group>";
+		};
+		03FEB928202C210200E50E85 /* VoiceWavToAmrDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				03FEB929202C210200E50E85 /* VoiceWavToAmrDemoUITests.m */,
+				03FEB92B202C210200E50E85 /* Info.plist */,
+			);
+			path = VoiceWavToAmrDemoUITests;
+			sourceTree = "<group>";
+		};
+		03FEB949202C225D00E50E85 /* AudioView */ = {
+			isa = PBXGroup;
+			children = (
+				03FEB94A202C226C00E50E85 /* AudioView.h */,
+				03FEB94C202C226D00E50E85 /* AudioView.m */,
+				03FEB94B202C226D00E50E85 /* AudioView.xib */,
+			);
+			path = AudioView;
+			sourceTree = "<group>";
+		};
+		03FEB94F202C227D00E50E85 /* AudioModule */ = {
+			isa = PBXGroup;
+			children = (
+				03FEB963202C235300E50E85 /* Speex */,
+				03FEB958202C22C100E50E85 /* OpenCoreAMR */,
+				03FEB950202C229000E50E85 /* AmrFileCodec.h */,
+				03FEB951202C229000E50E85 /* AmrFileCodec.m */,
+				03FEB953202C229600E50E85 /* AudioFormat.h */,
+				03FEB954202C229600E50E85 /* AudioFormat.m */,
+				03FEB976202C236800E50E85 /* SpeexAllHeader.h */,
+				03FEB974202C236800E50E85 /* SpeexCodec.h */,
+				03FEB975202C236800E50E85 /* SpeexCodec.m */,
+			);
+			path = AudioModule;
+			sourceTree = "<group>";
+		};
+		03FEB958202C22C100E50E85 /* OpenCoreAMR */ = {
+			isa = PBXGroup;
+			children = (
+				03FEB97F202C251D00E50E85 /* interf_dec.h */,
+				03FEB97E202C251D00E50E85 /* interf_enc.h */,
+				03FEB961202C234700E50E85 /* dec_if.h */,
+				03FEB962202C234700E50E85 /* if_rom.h */,
+				03FEB95A202C232C00E50E85 /* libopencore-amrnb.a */,
+				03FEB959202C232B00E50E85 /* libopencore-amrwb.a */,
+			);
+			path = OpenCoreAMR;
+			sourceTree = "<group>";
+		};
+		03FEB963202C235300E50E85 /* Speex */ = {
+			isa = PBXGroup;
+			children = (
+				03FEB96E202C235E00E50E85 /* libspeex.a */,
+				03FEB968202C235D00E50E85 /* libspeexdsp.a */,
+				03FEB96A202C235D00E50E85 /* speex_bits.h */,
+				03FEB964202C235C00E50E85 /* speex_buffer.h */,
+				03FEB96D202C235E00E50E85 /* speex_callbacks.h */,
+				03FEB967202C235D00E50E85 /* speex_config_types.h */,
+				03FEB96B202C235D00E50E85 /* speex_echo.h */,
+				03FEB966202C235D00E50E85 /* speex_header.h */,
+				03FEB970202C235E00E50E85 /* speex_jitter.h */,
+				03FEB96F202C235E00E50E85 /* speex_preprocess.h */,
+				03FEB971202C235E00E50E85 /* speex_resampler.h */,
+				03FEB96C202C235E00E50E85 /* speex_stereo.h */,
+				03FEB969202C235D00E50E85 /* speex_types.h */,
+				03FEB965202C235C00E50E85 /* speex.h */,
+			);
+			path = Speex;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03FEB901202C210200E50E85 /* VoiceWavToAmrDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03FEB92E202C210200E50E85 /* Build configuration list for PBXNativeTarget "VoiceWavToAmrDemo" */;
+			buildPhases = (
+				03FEB8FE202C210200E50E85 /* Sources */,
+				03FEB8FF202C210200E50E85 /* Frameworks */,
+				03FEB900202C210200E50E85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VoiceWavToAmrDemo;
+			productName = VoiceWavToAmrDemo;
+			productReference = 03FEB902202C210200E50E85 /* VoiceWavToAmrDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		03FEB919202C210200E50E85 /* VoiceWavToAmrDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03FEB931202C210200E50E85 /* Build configuration list for PBXNativeTarget "VoiceWavToAmrDemoTests" */;
+			buildPhases = (
+				03FEB916202C210200E50E85 /* Sources */,
+				03FEB917202C210200E50E85 /* Frameworks */,
+				03FEB918202C210200E50E85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03FEB91C202C210200E50E85 /* PBXTargetDependency */,
+			);
+			name = VoiceWavToAmrDemoTests;
+			productName = VoiceWavToAmrDemoTests;
+			productReference = 03FEB91A202C210200E50E85 /* VoiceWavToAmrDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		03FEB924202C210200E50E85 /* VoiceWavToAmrDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03FEB934202C210200E50E85 /* Build configuration list for PBXNativeTarget "VoiceWavToAmrDemoUITests" */;
+			buildPhases = (
+				03FEB921202C210200E50E85 /* Sources */,
+				03FEB922202C210200E50E85 /* Frameworks */,
+				03FEB923202C210200E50E85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03FEB927202C210200E50E85 /* PBXTargetDependency */,
+			);
+			name = VoiceWavToAmrDemoUITests;
+			productName = VoiceWavToAmrDemoUITests;
+			productReference = 03FEB925202C210200E50E85 /* VoiceWavToAmrDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03FEB8FA202C210200E50E85 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "王耀昌";
+				TargetAttributes = {
+					03FEB901202C210200E50E85 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					03FEB919202C210200E50E85 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 03FEB901202C210200E50E85;
+					};
+					03FEB924202C210200E50E85 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 03FEB901202C210200E50E85;
+					};
+				};
+			};
+			buildConfigurationList = 03FEB8FD202C210200E50E85 /* Build configuration list for PBXProject "VoiceWavToAmrDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 03FEB8F9202C210200E50E85;
+			productRefGroup = 03FEB903202C210200E50E85 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03FEB901202C210200E50E85 /* VoiceWavToAmrDemo */,
+				03FEB919202C210200E50E85 /* VoiceWavToAmrDemoTests */,
+				03FEB924202C210200E50E85 /* VoiceWavToAmrDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03FEB900202C210200E50E85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03FEB912202C210200E50E85 /* LaunchScreen.storyboard in Resources */,
+				03FEB90F202C210200E50E85 /* Assets.xcassets in Resources */,
+				03FEB90D202C210200E50E85 /* Main.storyboard in Resources */,
+				03FEB94D202C226D00E50E85 /* AudioView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03FEB918202C210200E50E85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03FEB923202C210200E50E85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03FEB8FE202C210200E50E85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03FEB90A202C210200E50E85 /* ViewController.m in Sources */,
+				03FEB915202C210200E50E85 /* main.m in Sources */,
+				03FEB907202C210200E50E85 /* AppDelegate.m in Sources */,
+				03FEB955202C229600E50E85 /* AudioFormat.m in Sources */,
+				03FEB94E202C226D00E50E85 /* AudioView.m in Sources */,
+				03FEB97D202C23C700E50E85 /* UIView+Addtions.m in Sources */,
+				03FEB977202C236800E50E85 /* SpeexCodec.m in Sources */,
+				03FEB952202C229000E50E85 /* AmrFileCodec.m in Sources */,
+				03FEB97C202C23C700E50E85 /* UIColor+PXColors.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03FEB916202C210200E50E85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03FEB91F202C210200E50E85 /* VoiceWavToAmrDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03FEB921202C210200E50E85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03FEB92A202C210200E50E85 /* VoiceWavToAmrDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03FEB91C202C210200E50E85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03FEB901202C210200E50E85 /* VoiceWavToAmrDemo */;
+			targetProxy = 03FEB91B202C210200E50E85 /* PBXContainerItemProxy */;
+		};
+		03FEB927202C210200E50E85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03FEB901202C210200E50E85 /* VoiceWavToAmrDemo */;
+			targetProxy = 03FEB926202C210200E50E85 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		03FEB90B202C210200E50E85 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03FEB90C202C210200E50E85 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		03FEB910202C210200E50E85 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03FEB911202C210200E50E85 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		03FEB92C202C210200E50E85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		03FEB92D202C210200E50E85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03FEB92F202C210200E50E85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XHZR35922B;
+				INFOPLIST_FILE = VoiceWavToAmrDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VoiceWavToAmrDemo/AudioModule/OpenCoreAMR",
+					"$(PROJECT_DIR)/VoiceWavToAmrDemo/AudioModule/Speex",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wyc.VoiceWavToAmrDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		03FEB930202C210200E50E85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XHZR35922B;
+				INFOPLIST_FILE = VoiceWavToAmrDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VoiceWavToAmrDemo/AudioModule/OpenCoreAMR",
+					"$(PROJECT_DIR)/VoiceWavToAmrDemo/AudioModule/Speex",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wyc.VoiceWavToAmrDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		03FEB932202C210200E50E85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XHZR35922B;
+				INFOPLIST_FILE = VoiceWavToAmrDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wyc.VoiceWavToAmrDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VoiceWavToAmrDemo.app/VoiceWavToAmrDemo";
+			};
+			name = Debug;
+		};
+		03FEB933202C210200E50E85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XHZR35922B;
+				INFOPLIST_FILE = VoiceWavToAmrDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wyc.VoiceWavToAmrDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VoiceWavToAmrDemo.app/VoiceWavToAmrDemo";
+			};
+			name = Release;
+		};
+		03FEB935202C210200E50E85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XHZR35922B;
+				INFOPLIST_FILE = VoiceWavToAmrDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wyc.VoiceWavToAmrDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VoiceWavToAmrDemo;
+			};
+			name = Debug;
+		};
+		03FEB936202C210200E50E85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XHZR35922B;
+				INFOPLIST_FILE = VoiceWavToAmrDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wyc.VoiceWavToAmrDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VoiceWavToAmrDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03FEB8FD202C210200E50E85 /* Build configuration list for PBXProject "VoiceWavToAmrDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03FEB92C202C210200E50E85 /* Debug */,
+				03FEB92D202C210200E50E85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03FEB92E202C210200E50E85 /* Build configuration list for PBXNativeTarget "VoiceWavToAmrDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03FEB92F202C210200E50E85 /* Debug */,
+				03FEB930202C210200E50E85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03FEB931202C210200E50E85 /* Build configuration list for PBXNativeTarget "VoiceWavToAmrDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03FEB932202C210200E50E85 /* Debug */,
+				03FEB933202C210200E50E85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03FEB934202C210200E50E85 /* Build configuration list for PBXNativeTarget "VoiceWavToAmrDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03FEB935202C210200E50E85 /* Debug */,
+				03FEB936202C210200E50E85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 03FEB8FA202C210200E50E85 /* Project object */;
+}

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="AudioView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S1C-Rd-AGM" userLabel="redView">
+                    <rect key="frame" x="158" y="114" width="4" height="4"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.011764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="4" id="U2Y-Rq-c79"/>
+                        <constraint firstAttribute="width" constant="4" id="wqt-yI-lJy"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Co2-O6-60Z" userLabel="littleMoveView">
+                    <rect key="frame" x="120" y="76" width="80" height="80"/>
+                    <color key="backgroundColor" red="0.85490196078431369" green="0.85490196078431369" blue="0.85490196078431369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="Yrb-2D-SDR"/>
+                        <constraint firstAttribute="height" constant="80" id="vWT-cn-JtQ"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tR4-ci-nDx" userLabel="audioRecordview">
+                    <rect key="frame" x="110" y="66" width="100" height="100"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="语音" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWv-Yk-Eem" userLabel="lbRecord">
+                            <rect key="frame" x="33" y="40" width="34" height="20.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.011764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="CqB-RV-x91"/>
+                        <constraint firstAttribute="centerX" secondItem="zWv-Yk-Eem" secondAttribute="centerX" id="NSc-xg-oBl"/>
+                        <constraint firstAttribute="width" constant="100" id="RlD-rQ-yoU"/>
+                        <constraint firstAttribute="centerY" secondItem="zWv-Yk-Eem" secondAttribute="centerY" id="hcw-WF-TbI"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h87-wF-d9i" userLabel="lbTop">
+                    <rect key="frame" x="143" y="15" width="33.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="0.0" blue="0.01176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手指下滑，停止录制并取消" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZV-EE-DDi" userLabel="lbBottom">
+                    <rect key="frame" x="58" y="186" width="204" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.62352941179999999" green="0.62352941179999999" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Co2-O6-60Z" firstAttribute="centerX" secondItem="tR4-ci-nDx" secondAttribute="centerX" id="4su-cR-Nh1"/>
+                <constraint firstAttribute="centerX" secondItem="IZV-EE-DDi" secondAttribute="centerX" id="8cS-rG-nHs"/>
+                <constraint firstItem="S1C-Rd-AGM" firstAttribute="centerY" secondItem="tR4-ci-nDx" secondAttribute="centerY" id="E5n-4t-v58"/>
+                <constraint firstItem="Co2-O6-60Z" firstAttribute="centerY" secondItem="tR4-ci-nDx" secondAttribute="centerY" id="HNr-gO-ub6"/>
+                <constraint firstAttribute="centerX" secondItem="tR4-ci-nDx" secondAttribute="centerX" id="ONP-Q1-n3N"/>
+                <constraint firstAttribute="centerX" secondItem="h87-wF-d9i" secondAttribute="centerX" id="dfA-Z2-IAK"/>
+                <constraint firstItem="h87-wF-d9i" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="kkP-LB-tmP"/>
+                <constraint firstAttribute="bottom" secondItem="tR4-ci-nDx" secondAttribute="bottom" constant="50" id="mEA-Xk-jP0"/>
+                <constraint firstAttribute="bottom" secondItem="IZV-EE-DDi" secondAttribute="bottom" constant="10" id="qB0-CL-FXW"/>
+                <constraint firstItem="S1C-Rd-AGM" firstAttribute="centerX" secondItem="tR4-ci-nDx" secondAttribute="centerX" id="sWt-gq-IlP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="audioBottomConstraint" destination="mEA-Xk-jP0" id="uR4-V0-6M5"/>
+                <outlet property="audioHeightContraint" destination="CqB-RV-x91" id="1qm-iB-d62"/>
+                <outlet property="audioRecordView" destination="tR4-ci-nDx" id="Q2w-vZ-sQu"/>
+                <outlet property="audioWidthContraint" destination="RlD-rQ-yoU" id="vj7-tO-O7o"/>
+                <outlet property="bgRedView" destination="S1C-Rd-AGM" id="3fN-eX-uhs"/>
+                <outlet property="lbBottom" destination="IZV-EE-DDi" id="puD-rn-Xts"/>
+                <outlet property="lbBottomBottomConstraint" destination="qB0-CL-FXW" id="vPN-DB-eEW"/>
+                <outlet property="lbRecord" destination="zWv-Yk-Eem" id="Cdd-dt-p1S"/>
+                <outlet property="lbTop" destination="h87-wF-d9i" id="Tlr-2k-2KM"/>
+                <outlet property="lbTopTopConstraint" destination="kkP-LB-tmP" id="2g4-fB-YIh"/>
+                <outlet property="littleMoveView" destination="Co2-O6-60Z" id="JLl-CW-3vD"/>
+                <outlet property="littleViewHeight" destination="vWT-cn-JtQ" id="gFI-mH-g25"/>
+                <outlet property="littleViewWidth" destination="Yrb-2D-SDR" id="kHl-fa-11h"/>
+                <outlet property="moveViewHeightContraint" destination="vWT-cn-JtQ" id="1zg-FO-fH6"/>
+                <outlet property="moveViewWidthContraint" destination="Yrb-2D-SDR" id="AKb-1S-UE4"/>
+            </connections>
+            <point key="canvasLocation" x="265" y="338"/>
+        </view>
+    </objects>
+</document>
